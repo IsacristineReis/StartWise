@@ -248,12 +248,11 @@ entre em contato com um clique!</pre
       };
       // BUTTON
       function openWhatsApp() {
-        const phoneNumber = "5511938013040";
-        const message = "Olá, gostaria de conversar com um dos consultores.";
-        const url =
-          "https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}";
-        window.open(url, "_black");
-      }
+  const phoneNumber = "5511938013040";
+  const message = "Olá, gostaria de conversar com um dos consultores.";
+  const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
     </script>
   </body>
 </html>
